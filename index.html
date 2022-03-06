@@ -4,8 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <title>Responsive Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet" />
+    <title>NavBAR</title>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <nav>
+        <p class="logo">NavBAR</p>
+        <ul class="nav__links" id="navLinks">
+          <li class="nav__links-item nav__icon">
+            <a href="javascript:void(0);" onclick="setResponsive()">
+              <img class="nav__icon-img" src="./images/nav-icon.svg" alt="Burger bars" />
+            </a>
+          </li>
+          <li class="nav__links-item"><a href="#">Beer</a></li>
+          <li class="nav__links-item"><a href="#">Cocktails</a></li>
+          <li class="nav__links-item"><a href="#">Liqour</a></li>
+          <li class="nav__links-item"><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="index.js"></script>
+  </body>
 </html>
