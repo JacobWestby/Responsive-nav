@@ -1,0 +1,39 @@
+@media screen and (max-width: 720px) {
+  nav .nav__links {
+    justify-content: flex-end;
+
+    &-item {
+      display: none;
+    }
+  }
+
+  nav .nav__links .nav__icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    max-height: 75px;
+  }
+
+  nav .responsive {
+    background-color: rgba(68, 68, 68, 0.452);
+    height: 200px;
+    position: relative;
+    top: 112px;
+    padding-inline-start: 10px;
+
+    .nav__links-item {
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-inline-start: 0px;
+
+      a {
+        font-size: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+header {
+  width: 100%;
+  background-color: #40c0e0;
+}
+
+nav {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 5%;
+}
+nav .logo {
+  font-family: "Syne Mono", monospace;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+}
+nav .nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+nav .nav__links-item a {
+  text-decoration: none;
+  color: #010101;
+  margin-right: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+nav .nav__links-item a:hover {
+  color: #fff;
+}
+nav .nav__links-item:nth-child(5) {
+  margin-right: 0;
+  min-width: 83px;
+}
+nav .nav__links-item:first-child {
+  display: none;
+}
+nav .nav__icon-img {
+  height: 40px;
+}
+
+@media screen and (max-width: 720px) {
+  nav .nav__links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav .nav__links-item {
+    display: none;
+  }
+
+  nav .nav__links .nav__icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 720px) {
+  nav {
+    max-height: 75px;
+  }
+
+  nav .responsive {
+    background-color: rgba(68, 68, 68, 0.452);
+    height: 200px;
+    position: relative;
+    top: 112px;
+    -webkit-padding-start: 10px;
+            padding-inline-start: 10px;
+  }
+  nav .responsive .nav__links-item {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+  }
+  nav .responsive .nav__links-item a {
+    font-size: 25px;
+  }
+}
+body {
+  background-color: rgba(100, 223, 216, 0.644);
+  height: 100%;
+  width: 100%;
+}
